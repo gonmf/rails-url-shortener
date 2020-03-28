@@ -1,0 +1,11 @@
+<h1>Create new short link</h1>
+
+<%= form_with model: @link, class: '' do |f| %>
+  <div class="form-group">
+    <label for="urlInput">URL to shorten</label>
+    <input type="url" class="form-control" id="urlInput" aria-describedby="urlHelp" name="url">
+    <small id="urlHelp" class="form-text text-muted">Must be a valid web address, and start with http:// or https://.</small>
+  </div>
+
+  <%= f.submit 'Create', class: 'btn btn-primary' %>
+<% end %>

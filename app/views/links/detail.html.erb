@@ -1,0 +1,9 @@
+<h1>Short link <%= @link.code %></h1>
+
+<p>Short link: <%= link_to link_url(@link.code), link_url(@link.code), target: '_blank' %></p>
+
+<p>Destination: <%= link_to @link.url, @link.url, target: '_blank' %></p>
+
+<p>Times visited: <%= @link.visits %></p>
+
+<p><%= link_to 'Go back', root_path %></p>

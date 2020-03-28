@@ -1,0 +1,15 @@
+AllCops:
+  TargetRubyVersion: 2.5.1
+  Exclude:
+    - bin/*
+    - config.ru
+    - config/**/*
+    - db/**/*
+    - Gemfile
+    - Rakefile
+    - test/**/*
+
+Style/Documentation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
